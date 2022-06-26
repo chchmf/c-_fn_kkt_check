@@ -33,6 +33,7 @@ class Program
         stopWatch.Stop();
         TimeSpan ts = stopWatch.Elapsed;
         Console.WriteLine($"Закончил за: {stopWatch.Elapsed}. Закрой меня...");
+        Console.ReadLine();
     }
     static async Task<string> get_json(string sn, string model, string choice, HttpClient client){
         string url;
